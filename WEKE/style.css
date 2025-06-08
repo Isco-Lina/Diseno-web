@@ -358,3 +358,24 @@ body {
     margin-bottom: 10px;
     color: #0A3D62;
 }
+
+.iconos-contacto {
+    display: flex;
+    justify-content: start;
+    gap: 25px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+/* ========== Iconos Contacto ========== */
+.iconos-contacto a img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.iconos-contacto a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
