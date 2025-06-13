@@ -68,9 +68,14 @@ body {
 /* ========== TÍTULO PRINCIPAL ========== */
 #nombre-empresa {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #2F3E46;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    padding: 0 10px;
+    color: #0A3D62; 
+    font-weight: 700;
+    line-height: 1.4;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05); 
 }
 
 /* ========== SECCIONES GENERALES ========== */
@@ -264,7 +269,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
+    margin-bottom: 50px;
 }
 
 .texto-inicio {
@@ -290,6 +296,8 @@ body {
 
 .imagen-inicio img {
     max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
