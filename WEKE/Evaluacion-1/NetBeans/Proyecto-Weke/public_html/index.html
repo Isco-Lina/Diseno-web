@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEKE - Ropa técnica, sustentable e inclusiva hecha en Chile</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .galeria-productos img {
+            width: auto;
+            height: 200px;
+        }
+
+        .contenedor-inicio img {
+            width: auto;
+            height: 200px;
+        }
+
+        .seccion-nosotros img {
+            width: auto;
+            height: 200px;
+        }
+
+        .seccion-equipo img {
+            width: auto;
+            height: 200px;
+        }
+    </style>
+
 </head>
 
 <body>
     <header id="encabezado">
         <div>
-            <img src="images/inicio/logo-weke2.png" alt="WEKE - Ropa técnica sustentable" id="logo-empresa">
+            <img src="images/inicio/logo-weke2.png" width="75px" alt="WEKE - Ropa técnica sustentable"
+                id="logo-empresa">
             <nav id="navegacion-principal">
                 <ul class="menu">
                     <li><a href="#inicio">Inicio</a></li>
@@ -42,14 +65,14 @@
             </div>
 
             <div class="contenedor-inicio">
-                <div class="imagen-inicio">
-                    <img src="images/inicio/inicio.png" alt="Vestir con sentido" />
-                </div>
                 <div class="texto-inicio">
                     <h2>Vestir con Sentido</h2>
                     <p>Diseñamos ropa técnica, funcional y duradera para montaña y ciudad, siempre bajo el concepto de
                         <strong>cero desperdicio</strong>. Todo hecho en Chile, con pasión y compromiso.
                     </p>
+                </div>
+                <div class="imagen-inicio">
+                    <img src="images/inicio/inicio.png" alt="Vestir con sentido" />
                 </div>
             </div>
 
@@ -65,13 +88,13 @@
             </div>
 
             <div class="contenedor-inicio">
-                <div class="imagen-inicio">
-                    <img src="images/inicio/inicio-4.png" alt="Sustentabilidad" />
-                </div>
                 <div class="texto-inicio">
                     <h2>Sustentabilidad Real</h2>
                     <p>Desde 1985 reutilizamos telas y carpas, entregamos nuestras prendas en bolsas con segundo uso, y
                         ofrecemos reparaciones. Vestir WEKE es apostar por una economía circular.</p>
+                </div>
+                <div class="imagen-inicio">
+                    <img src="images/inicio/inicio-4.png" alt="Sustentabilidad" />
                 </div>
             </div>
 
@@ -95,10 +118,6 @@
 
         <section id="nosotros" class="seccion-nosotros">
             <div class="contenedor-nosotros">
-                <div class="imagen-nosotros">
-                    <img src="images/inicio/mision-vision.png" alt="Nuestra Misión y Visión">
-                </div>
-
                 <div class="texto-nosotros">
                     <h2>¿Quiénes Somos?</h2>
 
@@ -111,6 +130,9 @@
                     <p>Weke es una empresa chilena que trabaja bajo el concepto de “cero residuo”, enfocada en reciclaje
                         y segundo uso. Desde 1985 promovemos una cultura sin desechos y ofrecemos garantía de por vida.
                     </p>
+                </div>
+                <div class="imagen-nosotros">
+                    <img src="images/inicio/mision-vision.png" alt="Nuestra Misión y Visión">
                 </div>
             </div>
 
@@ -138,9 +160,6 @@
                 </div>
 
                 <div class="contenedor-nosotros">
-                    <div class="imagen-nosotros">
-                        <img src="images/inicio/ropa-tecnica.jpg" alt="Nuestros Objetivos">
-                    </div>
                     <div class="texto-nosotros">
                         <h3>¿Qué es la ropa técnica?</h3>
                         <p>En WEKE fabricamos <strong>ropa técnica</strong>, un tipo de vestuario especializado para
@@ -153,10 +172,13 @@
                         <p>Nuestras prendas combinan estas tecnologías para ofrecerte una solución completa, cómoda y
                             sustentable, adaptada al cuerpo chileno y hecha en nuestro país.</p>
                     </div>
+                    <div class="imagen-nosotros">
+                        <img src="images/inicio/ropa-tecnica.jpg" alt="Nuestros Objetivos">
+                    </div>
                 </div>
         </section>
 
-        <section id="productos" class="seccion-productos">
+        <section id="productos" class="seccion">
             <div class="contenedor">
                 <h2>Nuestros Productos</h2>
                 <p>Explora nuestra línea de ropa técnica para todas las condiciones del outdoor</p>
@@ -173,7 +195,7 @@
 
                 <div id="linea-infantil" class="categoria-producto">
                     <br>
-                    <h3 class="categoria-titulo">Línea Infantil</h3>
+                    <h3>Línea Infantil</h3>
 
                     <div class="galeria-productos">
                         <figure>
@@ -208,7 +230,7 @@
 
                 <div id="primera-capa" class="categoria-producto">
                     <br><br>
-                    <h3 class="categoria-titulo">Primera Capa</h3>
+                    <h3>Primera Capa</h3>
 
                     <div class="galeria-productos">
 
@@ -279,7 +301,7 @@
 
                 <div id="segunda-capa" class="categoria-producto">
                     <br><br>
-                    <h3 class="categoria-titulo">Segunda Capa</h3>
+                    <h3>Segunda Capa</h3>
                     <div class="galeria-productos">
                         <figure>
                             <img src="images/productos/Segunda Capa/weke_h_chilca.jpg" alt="Pantalón para mujer">
@@ -324,7 +346,7 @@
 
                 <div id="tercera-capa" class="categoria-producto">
                     <br><br>
-                    <h3 class="categoria-titulo">Tercera Capa</h3>
+                    <h3>Tercera Capa</h3>
 
                     <div class="galeria-productos">
                         <figure>
@@ -417,7 +439,7 @@
 
                 <div id="accesorios" class="categoria-producto">
                     <br><br>
-                    <h3 class="categoria-titulo">Accesorios</h3>
+                    <h3>Accesorios</h3>
                     <div class="galeria-productos">
                         <figure>
                             <img src="images/productos/Accesorios/weke_banano_lahuen.jpg" alt="Banano lahuen azul ">
@@ -520,35 +542,30 @@
             </div>
         </section>
 
-        <br><br>
-
         <section id="equipo" class="seccion-equipo">
             <div class="contenedor">
                 <h2>Nuestro Equipo</h2>
-                <br>
                 <div class="contenedor-nosotros">
-                    <div class="imagen-nosotros">
-                        <img src="images/inicio/nuestro-equipo1.png" width="auto" height="300px"
-                            alt="Natalia Tapia Espinoza">
-                    </div>
                     <div class="texto-nosotros">
                         <h3>Natalia Tapia Espinoza</h3>
                         <p>Ingeniera comercial U.C. (egresada), cofundadora de WEKE, madre de dos hijas y jefa de hogar.
                         </p>
                         <p>Encargada de ventas para empresas y redes sociales.</p>
                     </div>
+                    <div class="imagen-nosotros">
+                        <img src="images/inicio/nuestro-equipo1.png" alt="Natalia Tapia Espinoza">
+                    </div>
                 </div>
 
                 <div class="contenedor-nosotros">
-                    <div class="imagen-nosotros">
-                        <img src="images/inicio/nuestro-equipo2.png" width="auto" height="300px"
-                            alt="Vidalina Díaz Canto">
-                    </div>
                     <div class="texto-nosotros">
                         <h3>Vidalina Díaz Canto</h3>
                         <p>Casada, jefa de hogar, Magíster en Lingüística de la USACH. Creadora de la marca WEKE y del
                             concepto de ropa no desechable.</p>
                         <p>Gestora de <em>“Cómo vestir desde la inclusión”</em>.</p>
+                    </div>
+                    <div class="imagen-nosotros">
+                        <img src="images/inicio/nuestro-equipo2.png" alt="Vidalina Díaz Canto">
                     </div>
                 </div>
             </div>
@@ -578,13 +595,11 @@
                         <img src="images/contacto/gmail.png" width="40px" alt="Correo de contacto"
                             title="Correo de contacto">
                     </a>
-
                 </div>
 
                 <ul class="lista-contacto">
                     <li><strong>Ventas Mayoristas:</strong> <em>Escríbenos para convenios especiales y distribución al
-                            por
-                            mayor.</em></li>
+                            por mayor.</em></li>
                     <li><strong>Nuestra sala de muestra:</strong><br>
                         Visítanos en nuestra sala ubicada en Santiago.
                         Horario:
@@ -594,8 +609,7 @@
                 <div class="mapa-contacto">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1762706545355!2d-70.55110092458519!3d-33.41864849588376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ce8d61bfdfd3%3A0x71890743a8f0eca2!2sGredos%207952%2C%207550000%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1749772986956!5m2!1ses!2scl"
-                        width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">>
+                        width="100%" height="200px">
                     </iframe>
                 </div>
             </div>

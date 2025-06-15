@@ -11,7 +11,6 @@ body {
     background-color: #F5F5F5;
     color: #2B2B2B;
     line-height: 1.6;
-    text-align: 10px;
 }
 
 /* ========== ENCABEZADO FIJO ========== */
@@ -37,8 +36,8 @@ body {
 }
 
 #logo-empresa {
-    max-width: 85px;
-    height: auto;
+    width: auto;
+    height: 75px;
 }
 
 /* ========== MENÚ DE NAVEGACIÓN ========== */
@@ -77,24 +76,6 @@ body {
     font-weight: 700;
     line-height: 1.4;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
-}
-
-/* ========== SECCIONES GENERALES ========== */
-.seccion {
-    margin-bottom: 50px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.seccion h2 {
-    color: #2F3E46;
-    margin-bottom: 15px;
-}
-
-.seccion p {
-    margin-bottom: 10px;
 }
 
 /* ========== SECCIÓN INICIO ========== */
@@ -182,6 +163,17 @@ body {
 }
 
 /* ========== FILTROS DE CATEGORÍAS ========== */
+
+.seccion-productos h2 {
+    color: #0A3D62;
+    margin-bottom: 20px;
+}
+
+.seccion-productos p {
+    margin-bottom: 15px;
+    color: #2B2B2B;
+}
+
 .filtros-productos ul {
     list-style: none;
     padding-left: 0;
@@ -205,6 +197,14 @@ body {
 }
 
 /* ========== GALERÍA DE PRODUCTOS ========== */
+
+.categoria-titulo {
+    text-align: center;
+    color: #0A3D62;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
 .galeria-productos {
     display: flex;
     flex-wrap: wrap;
@@ -247,6 +247,11 @@ body {
     align-items: center;
 }
 
+.seccion-equipo .contenedor h2 {
+    color: #0A3D62;
+    margin-bottom: 20px;
+}
+
 .texto-nosotros h3 {
     margin-bottom: 10px;
     color: #0A3D62;
@@ -274,6 +279,12 @@ body {
 }
 
 /* ========== CONTACTO Y MAPA ========== */
+
+.seccion-contacto .contenedor h2 {
+    color: #0A3D62;
+    margin-bottom: 20px;
+}
+
 .lista-contacto {
     list-style: none;
     padding-left: 0;
