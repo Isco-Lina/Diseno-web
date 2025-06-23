@@ -78,88 +78,80 @@ body {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
 }
 
-/* ========== SECCIÓN INICIO ========== */
-.seccion-inicio .contenedor-inicio {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 60px;
-    margin-bottom: 50px;
+/* ========== SECCIÓN INICIO CON GRID ========== */
+.seccion-inicio {
+  padding: 40px 20px;
+}
+
+.grid-inicio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
 }
 
 .texto-inicio {
-    flex: 1 1 500px;
-    color: #2B2B2B;
+  color: #2B2B2B;
 }
 
 .texto-inicio h2 {
-    color: #0A3D62;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  color: #0A3D62;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .texto-inicio ul {
-    padding-left: 20px;
-    list-style: disc;
+  padding-left: 20px;
+  list-style: disc;
 }
 
 .imagen-inicio {
-    flex: 1 1 400px;
-    text-align: center;
+  text-align: center;
 }
 
 .imagen-inicio img {
-    max-width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* ========== SECCIÓN NOSOTROS ========== */
-.seccion-nosotros .contenedor-nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 40px;
+/* ========== SECCIÓN NOSOTROS CON GRID ========== */
+.seccion-nosotros {
+  padding: 40px 20px;
 }
 
-.imagen-nosotros {
-    flex: 1 1 400px;
-    text-align: center;
-}
-
-.imagen-nosotros img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.grid-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
 }
 
 .texto-nosotros {
-    flex: 1 1 500px;
+  color: #2B2B2B;
 }
 
-.texto-nosotros h2 {
-    color: #0A3D62;
-    margin-bottom: 20px;
-}
-
+.texto-nosotros h2,
 .texto-nosotros h3 {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    color: #1B4F72;
-}
-
-.texto-nosotros p {
-    margin-bottom: 15px;
-    color: #2B2B2B;
+  color: #0A3D62;
 }
 
 .texto-nosotros ul {
-    list-style: disc;
-    padding-left: 20px;
-    margin-bottom: 15px;
+  padding-left: 20px;
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+.imagen-nosotros {
+  text-align: center;
+}
+
+.imagen-nosotros img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ========== FILTROS DE CATEGORÍAS ========== */
@@ -349,4 +341,203 @@ body {
     background-color: #145374;
     transform: scale(1.1);
     opacity: 1;
+}
+
+/* ========== RESPONSIVE GENERAL ========== */
+@media (max-width: 768px) {
+  body {
+    padding-top: 150px;
+    font-size: 16px;
+  }
+
+  #encabezado {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0A3D62;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  #encabezado div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo-empresa {
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu a {
+    font-size: 0.95rem;
+    padding: 6px 0;
+  }
+
+  #nombre-empresa {
+    font-size: 1.5rem;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Grid INICIO y NOSOTROS */
+  .grid-inicio,
+  .grid-nosotros {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .imagen-inicio img,
+  .imagen-nosotros img {
+    width: 100%;
+    max-width: 350px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .texto-inicio,
+  .texto-nosotros {
+    text-align: center;
+  }
+
+  /* Productos */
+  .seccion-productos {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .filtros-productos ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .filtros-productos a {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: #E67E22;
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .filtros-productos a:hover {
+    background-color: #1B4F72;
+  }
+
+  .galeria-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria-productos figure {
+    width: 90%;
+    max-width: 280px;
+    margin: 10px auto;
+  }
+
+  /* Contacto */
+  .iconos-contacto {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .lista-contacto {
+    padding: 0 10px;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 250px;
+  }
+
+  /* Tipografías */
+  h1, h2, h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  #pie-pagina {
+    font-size: 0.85rem;
+    padding: 15px 10px;
+  }
+
+  #btn-volver-arriba {
+    bottom: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    z-index: 999;
+  }
+}
+
+
+/* ========== RESPONSIVE PARA MENOS DE 400px ========== */
+@media (max-width: 400px) {
+  #logo-empresa {
+    height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .menu {
+    gap: 6px;
+    font-size: 0.85rem;
+  }
+
+  #nombre-empresa {
+    font-size: 1.3rem;
+    margin-top: 120px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  p, li {
+    font-size: 0.9rem;
+  }
+
+  .imagen-inicio img,
+  .imagen-nosotros img {
+    max-height: 150px;
+  }
+
+  .iconos-contacto a img {
+    width: 35px;
+  }
+
+  #btn-volver-arriba {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
 }
