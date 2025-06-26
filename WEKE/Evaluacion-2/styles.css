@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/* ========== DESPLAZAMIENTO SUAVE ========== */
+html{
+  scroll-behavior: smooth;
+
+/* ========== AJUSTE DEL ALTO DE HEADER ========== */  
+  scroll-padding-top: 100px; 
+}
+
 /* ========== CUERPO (BODY) ========== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -85,7 +93,7 @@ body {
 
 .grid-inicio {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 50% 50%;
   gap: 60px;
   margin-bottom: 60px;
 }
@@ -124,7 +132,7 @@ body {
 
 .grid-nosotros {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 50% 50%;
   gap: 60px;
   margin-bottom: 60px;
 }
@@ -231,43 +239,41 @@ body {
 }
 
 /* ========== SECCIÓN EQUIPO ========== */
-.seccion-equipo .contenedor-nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 40px;
-    align-items: center;
+
+.seccion-equipo {
+  padding: 40px 20px;
 }
 
-.seccion-equipo .contenedor h2 {
-    color: #0A3D62;
-    margin-bottom: 20px;
+.seccion-equipo h2 {
+  color: #0A3D62;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.texto-nosotros h3 {
-    margin-bottom: 10px;
-    color: #0A3D62;
+.grid-equipo {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 60px;
+  align-items: center;
 }
 
-.iconos-contacto {
-    display: flex;
-    justify-content: start;
-    gap: 25px;
-    margin: 20px 0;
-    flex-wrap: wrap;
+.imagen-equipo {
+  text-align: center;
 }
 
-.iconos-contacto a img {
-    width: 50px;
-    height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 8px;
-    margin: 10px;
+.imagen-equipo img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.iconos-contacto a img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.texto-equipo {
+  color: #2B2B2B;
+}
+
+.texto-equipo h3 {
+  color: #0A3D62;
+  margin-bottom: 10px;
 }
 
 /* ========== CONTACTO Y MAPA ========== */
@@ -304,6 +310,27 @@ body {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.iconos-contacto {
+    display: flex;
+    justify-content: start;
+    gap: 25px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.iconos-contacto a img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.iconos-contacto a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* ========== PIE DE PÁGINA ========== */
@@ -345,6 +372,9 @@ body {
 
 /* ========== RESPONSIVE GENERAL ========== */
 @media (max-width: 768px) {
+  html{   
+    scroll-padding-top: 150px; 
+  }
   body {
     padding-top: 150px;
     font-size: 16px;
@@ -412,6 +442,17 @@ body {
   .texto-inicio,
   .texto-nosotros {
     text-align: center;
+  }
+
+  /* Equipo */
+  .grid-equipo {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .imagen-equipo img {
+    max-height: 220px;
   }
 
   /* Productos */
@@ -500,7 +541,11 @@ body {
 
 
 /* ========== RESPONSIVE PARA MENOS DE 400px ========== */
-@media (max-width: 400px) {
+@media (max-width: 400px) { 
+  html{   
+    scroll-padding-top: 50%; 
+  }
+
   #logo-empresa {
     height: 35px;
     margin-bottom: 5px;
